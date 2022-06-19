@@ -4,7 +4,10 @@
   "description": "Examples for the Practical WebGL from scratch AWWWARDS video course",
   "main": "index.js",
   "scripts": {
-    "start": "http-server src"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
   },
   "repository": {
     "type": "git",
@@ -22,7 +25,9 @@
     "url": "https://github.com/gnikoloff/practical-webgl-from-scratch-course/issues"
   },
   "homepage": "https://github.com/gnikoloff/practical-webgl-from-scratch-course#readme",
-  "dependencies": {
-    "http-server": "^14.0.0"
+  "devDependencies": {
+    "nuxt": "~3.0.0-rc.4",
+    "sass": "^1.52.3",
+    "typescript": "^4.7.4"
   }
 }
