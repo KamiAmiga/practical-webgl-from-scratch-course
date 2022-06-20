@@ -2,9 +2,7 @@
   import { ref, onMounted } from 'vue'
 
   const props = defineProps({
-    canvasR: { type: Number, required: false, default: .75 },
-    canvasG: { type: Number, required: false, default: .95 },
-    canvasB: { type: Number, required: false, default: 1 },
+    canvasColorAsRGB: { type: Array, required: false, default:[0, 0, 0] }
   })
 
   const canvasWidth: number = 512 * devicePixelRatio
@@ -26,7 +24,7 @@
       
       gl.viewport(0, 0, gl.drawingBufferWidth, gl.drawingBufferHeight)
 
-      gl.clearColor(props.canvasR, props.canvasG, props.canvasB, 1)
+      gl.clearColor(props.canvasColorAsRGB[0], props.canvasColorAsRGB[1], props.canvasColorAsRGB[2], 1)
       gl.clear(gl.COLOR_BUFFER_BIT)
     }
   })
