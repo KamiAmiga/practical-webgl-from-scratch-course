@@ -16,12 +16,9 @@ const canvasColorAsRGB = (canvasColor) => {
 </script>
 
 <template>
-  <div>
-    <h1>01 - App Boilerplate</h1>
-    <input type="color" v-model="canvasColor" />
-    <canvasVue :canvasColorAsRGB="canvasColorAsRGB(canvasColor)" />
-  </div>
+<div>
+  <h1>01 - App Boilerplate</h1>
+  <input type="color" v-model="canvasColor" />
+  <canvasVue :canvasColorAsRGB="canvasColorAsRGB(canvasColor)" />
+</div>
 </template>
-
-<style lang="sass">
-</style>
